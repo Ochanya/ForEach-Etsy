@@ -15,6 +15,7 @@ function question1 () {
   })
   let Average= total/data.length;
   console.log(Average);
+  console.log(total);
 }
 
 
@@ -83,14 +84,12 @@ function question5 () {
 // Answer:
 function question6 () {
   // Answer:
-  handMade=0;
-  data.forEach(function(madeHow){
-    if(madeHow.who_made==="i did"){
+  let handMade = 0;
+  data.forEach(function(madeBy){
+    if(madeBy.who_made === "i_did"){
       handMade++;
-
-      }
-console.log(handMade);
+    }
   })
-
+ console.log(handMade);
 
 }
